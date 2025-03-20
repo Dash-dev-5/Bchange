@@ -57,6 +57,7 @@ export default function App() {
     if (selectedOption === 'enrol1') isPaid = student.enrolement1;
     if (selectedOption === 'enrol2') isPaid = student.enrolement2;
     if (selectedOption === 'enrol3') isPaid = student.enrolement3;
+    if (selectedOption === 'biblio') isPaid = student.biblio;
     
     if (isPaid) {
       setStatusColor('green');
@@ -96,6 +97,7 @@ export default function App() {
             <View style={styles.radioItem}><RadioButton value="enrol1" /><Text>Enrol MS</Text></View>
             <View style={styles.radioItem}><RadioButton value="enrol2" /><Text>Enrol 1S</Text></View>
             <View style={styles.radioItem}><RadioButton value="enrol3" /><Text>Enrol 2S</Text></View>
+            <View style={styles.radioItem}><RadioButton value="biblio" /><Text>biblio</Text></View>
           </View>
         </RadioButton.Group>
       </View>

@@ -101,7 +101,7 @@ export default function App() {
           </View>
         </RadioButton.Group>
       </View>
-
+{/* //eas build -p android --profile preview */}
       <View style={styles.dataContainer}>
         {studentInfo ? (
           studentInfo.error ? (
